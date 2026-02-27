@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function TableDemo() {
+export default function TablesDemo() {
 
     const [product,setProduct] = useState("")
     const [productlist,setProductList] =useState([]) //empty list
@@ -8,6 +8,11 @@ export default function TableDemo() {
     const handleChange=(e)=>{
 
         setProduct(e.target.value)
+        /*
+        e means event (any name can be given for an event)
+        e.target means specific input field
+        e,target.value means value inputed in the input field
+        */
     }
 
     const addProduct= ()=>{
